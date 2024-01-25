@@ -1,3 +1,3 @@
 import 'tailwindcss/tailwind.css'
 
-export * as Test from '@/components/test';
+export * from '@/components/Table/index';
