@@ -11,5 +11,6 @@ export * from '@/components/Collapsible';
 export * from '@/components/Command';
 export * from '@/components/ContextMenu';
 export * from '@/components/Dialog';
+export * from '@/components/Drawer';
 export * from '@/components/Label'
 export * from '@/components/Table';
