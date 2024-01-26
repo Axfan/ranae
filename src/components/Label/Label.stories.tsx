@@ -1,10 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
-
-import {
-  Label
-} from "./index";
+import { Label } from "./index";
 
 import { Checkbox } from "../ui/checkbox";
 
@@ -27,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   render: () => {
     return (
-    <div>
+      <div>
         <div className="rn-flex rn-items-center rn-space-x-2">
           <Checkbox id="terms" />
           <Label htmlFor="terms">Accept terms and conditions</Label>

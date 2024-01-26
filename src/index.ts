@@ -1,3 +1,5 @@
 import 'tailwindcss/tailwind.css'
 
-export * from '@/components/Table/index';
+export * from '@/components/Accordion';
+export * from '@/components/Label'
+export * from '@/components/Table';
