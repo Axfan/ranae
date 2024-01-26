@@ -9,5 +9,6 @@ export * from '@/components/Calendar';
 export * from '@/components/Checkbox';
 export * from '@/components/Collapsible';
 export * from '@/components/Command';
+export * from '@/components/ContextMenu';
 export * from '@/components/Label'
 export * from '@/components/Table';
