@@ -10,5 +10,6 @@ export * from '@/components/Checkbox';
 export * from '@/components/Collapsible';
 export * from '@/components/Command';
 export * from '@/components/ContextMenu';
+export * from '@/components/Dialog';
 export * from '@/components/Label'
 export * from '@/components/Table';
