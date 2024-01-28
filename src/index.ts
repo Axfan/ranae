@@ -26,4 +26,5 @@ export * from '@/components/RadioGroup';
 export * from '@/components/Resizable';
 export * from '@/components/ScrollArea'
 export * from '@/components/Select'
+export * from '@/components/ScrollArea';
 export * from '@/components/Table';
