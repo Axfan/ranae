@@ -24,4 +24,5 @@ export * from '@/components/Popover';
 export * from '@/components/Progress';
 export * from '@/components/RadioGroup';
 export * from '@/components/Resizable';
+export * from '@/components/ScrollArea'
 export * from '@/components/Table';
