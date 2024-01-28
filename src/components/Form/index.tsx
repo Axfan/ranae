@@ -13,6 +13,9 @@ import {
 import { cn } from "@/lib/utils"
 import { Label } from "@/components/ui/label"
 
+/**
+ * Composable forms using react-hook-form and Zod for validation
+ */
 const Form = FormProvider
 
 type FormFieldContextValue<

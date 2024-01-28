@@ -19,6 +19,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/**
+ * Accessible resizable panel groups and layouts
+ */
 export const Primary: any = {
   render: () => {
     return (

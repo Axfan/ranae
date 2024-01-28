@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 import { Button } from "./index";
 
@@ -23,6 +22,46 @@ export const Primary: Story = {
   render: () => {
     return (
         <Button>Button</Button>
+    );
+  },
+};
+
+export const Secondary: Story = {
+  render: () => {
+    return (
+        <Button variant="secondary">Button</Button>
+    );
+  },
+};
+
+export const Destructive: Story = {
+  render: () => {
+    return (
+        <Button variant="destructive">Button</Button>
+    );
+  },
+};
+
+export const Outline: Story = {
+  render: () => {
+    return (
+        <Button variant="outline">Button</Button>
+    );
+  },
+};
+
+export const Ghost: Story = {
+  render: () => {
+    return (
+        <Button variant="ghost">Button</Button>
+    );
+  },
+};
+
+export const Link: Story = {
+  render: () => {
+    return (
+        <Button variant="link">Button</Button>
     );
   },
 };

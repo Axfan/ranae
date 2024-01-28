@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 import { Badge } from "./index";
 
@@ -19,10 +18,35 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Default: Story = {
   render: () => {
     return (
       <Badge>Badge</Badge>
     );
   },
 };
+
+export const Secondary: Story = {
+  render: () => {
+    return (
+      <Badge variant="secondary">Badge</Badge>
+    );
+  },
+};
+
+export const Destructive: Story = {
+  render: () => {
+    return (
+      <Badge variant="destructive">Badge</Badge>
+    );
+  },
+};
+
+export const Outline: Story = {
+  render: () => {
+    return (
+      <Badge variant="Outline">Badge</Badge>
+    );
+  },
+};
+

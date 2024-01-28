@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -39,6 +38,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/**
+ * Composable forms using react-hook-form and Zod for validation
+ */
 export const Primary: any = {
   render: () => {
     // 1. Define your form.

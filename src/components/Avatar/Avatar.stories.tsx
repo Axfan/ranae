@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "./index";
 
@@ -24,7 +23,7 @@ export const Primary: Story = {
     return (
       <Avatar>
         <AvatarImage src="https://github.com/axfan.png" alt="@axfan" />
-        <AvatarFallback>CN</AvatarFallback>
+        <AvatarFallback>AS</AvatarFallback>
       </Avatar>
     );
   },
