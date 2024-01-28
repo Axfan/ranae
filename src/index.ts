@@ -31,4 +31,5 @@ export * from '@/components/Separator';
 export * from '@/components/Sheet';
 export * from '@/components/Skeleton';
 export * from '@/components/Slider'
+export * from '@/components/Switch'
 export * from '@/components/Table';
