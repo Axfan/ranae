@@ -30,4 +30,5 @@ export * from '@/components/ScrollArea';
 export * from '@/components/Separator';
 export * from '@/components/Sheet';
 export * from '@/components/Skeleton';
+export * from '@/components/Slider'
 export * from '@/components/Table';
