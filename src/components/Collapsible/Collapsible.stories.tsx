@@ -37,7 +37,7 @@ export const Primary: Story = {
       >
         <div className="rn-flex rn-items-center rn-justify-between rn-space-x-4 rn-px-4">
           <h4 className="rn-text-sm rn-font-semibold">
-            @peduarte starred 3 repositories
+            @axfan starred 3 repositories
           </h4>
           <CollapsibleTrigger asChild>
             <Button variant="ghost" size="sm" className="rn-w-9 rn-p-0">
