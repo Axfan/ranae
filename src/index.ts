@@ -28,4 +28,5 @@ export * from '@/components/ScrollArea'
 export * from '@/components/Select'
 export * from '@/components/ScrollArea';
 export * from '@/components/Separator';
+export * from '@/components/Sheet';
 export * from '@/components/Table';
