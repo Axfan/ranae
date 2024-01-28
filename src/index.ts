@@ -23,4 +23,5 @@ export * from '@/components/Pagination';
 export * from '@/components/Popover';
 export * from '@/components/Progress';
 export * from '@/components/RadioGroup';
+export * from '@/components/Resizable';
 export * from '@/components/Table';
