@@ -20,4 +20,5 @@ export * from '@/components/Label';
 export * from '@/components/Menubar';
 export * from '@/components/NavigationMenu';
 export * from '@/components/Pagination';
+export * from '@/components/Popover'
 export * from '@/components/Table';
