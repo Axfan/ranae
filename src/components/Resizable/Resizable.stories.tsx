@@ -1,5 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import type { Meta } from "@storybook/react";
 
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./index";
 
@@ -17,7 +16,6 @@ const meta = {
 } satisfies Meta<typeof ResizablePanelGroup>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 /**
  * Accessible resizable panel groups and layouts

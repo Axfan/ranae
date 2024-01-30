@@ -45,7 +45,7 @@ export const Destructive: Story = {
 export const Outline: Story = {
   render: () => {
     return (
-      <Badge variant="Outline">Badge</Badge>
+      <Badge variant="outline">Badge</Badge>
     );
   },
 };

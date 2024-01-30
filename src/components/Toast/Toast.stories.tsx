@@ -1,5 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import React from "react";
+import type { Meta } from "@storybook/react";
 
 import { Button } from "@/components/Button";
 import { ToastAction, useToast, Toaster } from "@/components/Toast";
@@ -17,7 +16,6 @@ const meta = {
 } satisfies Meta<typeof ToastAction>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 export const Primary: any = {
   render: () => {

@@ -1,5 +1,5 @@
 export * from "../ui/navigation-menu";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta } from "@storybook/react";
 import React from "react";
 
 import { cn } from "@/lib/utils"
@@ -65,7 +65,6 @@ const meta = {
 } satisfies Meta<typeof NavigationMenu>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
 export const Primary: any = {
   render: () => {
