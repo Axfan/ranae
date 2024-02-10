@@ -12,6 +12,7 @@ export * from '@/components/Checkbox';
 export * from '@/components/Collapsible';
 export * from '@/components/Command';
 export * from '@/components/ContextMenu';
+export * from '@/components/Copy';
 export * from '@/components/Dialog';
 export * from '@/components/Drawer';
 export * from '@/components/Form';
