@@ -10,7 +10,7 @@ import {
   } from "@/components/Carousel"
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
+const meta: object = {
   title: "Components/Carousel",
   component: Carousel,
   parameters: {

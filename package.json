@@ -1,11 +1,13 @@
 {
   "name": "ranae",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "author": "Adam Smith <axous@protonmail.com",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "run-p build:*",
+    "build:scripts": "vite build",
+    "build:types": "tsc --emitDeclarationOnly && tsc-alias",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -17,12 +19,13 @@
   "exports": {
     ".": {
       "require": "./dist/index.cjs.js",
-      "import": "./dist/index.es.js"
+      "import": "./dist/index.es.js",
+      "types": "./dist/index.d.ts"
     },
-     "./dist/style.css": "./dist/style.css"
+    "./style.css": "./dist/style.css",
+    "./dist/index.d.ts": "./dist/index.d.ts"
   },
   "sideEffects": false,
-
   "files": [
     "dist"
   ],
@@ -93,6 +96,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "storybook": "^7.6.7",
     "tsc-alias": "^1.8.8",
