@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
-import { Minus, Plus } from "lucide-react"
-import { Bar, BarChart, ResponsiveContainer } from "recharts"
-import { Button } from "@/components/Button"
+import { ArrowRightIcon, CheckCircle, CheckCircleIcon, CheckIcon, ChevronRightIcon, Minus, Plus } from "lucide-react";
+import { Bar, BarChart, ResponsiveContainer } from "recharts";
+import { Button } from "@/components/Button";
 import {
   Drawer,
   DrawerClose,
@@ -13,49 +13,50 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "./index"
+} from "./index";
+import { Separator } from "@/components/Separator";
 
 const data = [
-    {
-      goal: 400,
-    },
-    {
-      goal: 300,
-    },
-    {
-      goal: 200,
-    },
-    {
-      goal: 300,
-    },
-    {
-      goal: 200,
-    },
-    {
-      goal: 278,
-    },
-    {
-      goal: 189,
-    },
-    {
-      goal: 239,
-    },
-    {
-      goal: 300,
-    },
-    {
-      goal: 200,
-    },
-    {
-      goal: 278,
-    },
-    {
-      goal: 189,
-    },
-    {
-      goal: 349,
-    },
-  ]
+  {
+    goal: 400,
+  },
+  {
+    goal: 300,
+  },
+  {
+    goal: 200,
+  },
+  {
+    goal: 300,
+  },
+  {
+    goal: 200,
+  },
+  {
+    goal: 278,
+  },
+  {
+    goal: 189,
+  },
+  {
+    goal: 239,
+  },
+  {
+    goal: 300,
+  },
+  {
+    goal: 200,
+  },
+  {
+    goal: 278,
+  },
+  {
+    goal: 189,
+  },
+  {
+    goal: 349,
+  },
+];
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta: object = {
@@ -75,12 +76,12 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   render: () => {
-    const [goal, setGoal] = React.useState(350)
- 
+    const [goal, setGoal] = React.useState(350);
+
     function onClick(adjustment: number) {
-      setGoal(Math.max(200, Math.min(400, goal + adjustment)))
+      setGoal(Math.max(200, Math.min(400, goal + adjustment)));
     }
-   
+
     return (
       <Drawer>
         <DrawerTrigger asChild>
@@ -90,7 +91,9 @@ export const Primary: Story = {
           <div className="rn-mx-auto rn-w-full rn-max-w-sm">
             <DrawerHeader>
               <DrawerTitle>Move Goal</DrawerTitle>
-              <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+              <DrawerDescription>
+                Set your daily activity goal.
+              </DrawerDescription>
             </DrawerHeader>
             <div className="rn-p-4 rn-pb-0">
               <div className="rn-flex rn-items-center rn-justify-center rn-space-x-2">
@@ -148,6 +151,52 @@ export const Primary: Story = {
           </div>
         </DrawerContent>
       </Drawer>
-    )
+    );
+  },
+};
+
+export const ActionDrawer: Story = {
+  render: () => {
+    return (
+      <Drawer>
+        <DrawerTrigger asChild>
+            <div className="rn-flex rn-w-60 hover:rn-bg-slate-100 rn-px-1 rn-py-2 hover:rn-cursor-pointer">
+              <div className="rn-flex rn-grow">
+                <CheckCircleIcon className="rn-mr-4 rn-text-emerald-400"/>
+                Temp
+              </div>
+              <div className="rn-flex rn-text-gray-500">
+                24C <ChevronRightIcon />
+              </div>
+            </div>
+        </DrawerTrigger>
+        <DrawerContent>
+          <div className="rn-mx-auto rn-w-full rn-max-w-sm">
+            <DrawerHeader>
+              <DrawerTitle>Temperature</DrawerTitle>
+              <DrawerDescription>
+                Actions
+              </DrawerDescription>
+            </DrawerHeader>
+            <div className="rn-p-4 rn-pb-0">
+              <Button className="rn-w-full" variant="outline">
+                View Historical
+              </Button>
+              <div className="rn-my-3">
+
+              </div>
+              <Button className="rn-w-full" variant="outline">
+                Report Issue
+              </Button>
+            </div>
+            <DrawerFooter>
+              <DrawerClose asChild>
+                <Button variant="ghost">Cancel</Button>
+              </DrawerClose>
+            </DrawerFooter>
+          </div>
+        </DrawerContent>
+      </Drawer>
+    );
   },
 };
