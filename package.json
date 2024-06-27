@@ -1,6 +1,6 @@
 {
   "name": "ranae",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "type": "module",
   "author": "Adam Smith <axous@protonmail.com",
   "scripts": {
@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic"
+    "chromatic": "chromatic --project-token chpt_9c9c4ba296dd284"
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -56,12 +56,14 @@
     "@radix-ui/react-tabs": "^1.0.4",
     "@radix-ui/react-toast": "^1.1.5",
     "@radix-ui/react-tooltip": "^1.0.7",
+    "@tanstack/match-sorter-utils": "^8.15.1",
     "@tanstack/react-table": "^8.11.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cmdk": "^0.2.0",
     "date-fns": "^3.3.1",
     "embla-carousel-react": "8.0.0-rc20",
+    "framer-motion": "^11.0.6",
     "lucide-react": "^0.308.0",
     "react-day-picker": "^8.10.0",
     "react-dom": "^18.2.0",
